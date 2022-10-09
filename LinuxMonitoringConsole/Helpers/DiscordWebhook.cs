@@ -59,8 +59,8 @@ namespace LinuxMonitoringConsole.Helpers
 		{
 			return new DiscordEmbedMsg()
 			{
-				Username = "JIRA",
-				AvatarUrl = "https://a.slack-edge.com/ae7f/plugins/jira/assets/service_512.png",
+				Username = "Server Monitoring",
+				AvatarUrl = "https://cdn-icons-png.flaticon.com/512/2906/2906274.png",
 				Embeds = new List<Embed>()
 				{
 					new Embed()
