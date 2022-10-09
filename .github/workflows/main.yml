@@ -2,7 +2,18 @@ name: publish
 
 on:
   push:
-    branches: [ production ]
+    branches: [ master ]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
 
 env:
   AZURE_WEBAPP_NAME: LinuxMonitoringConsole
